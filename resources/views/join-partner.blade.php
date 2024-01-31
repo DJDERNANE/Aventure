@@ -150,7 +150,6 @@
                             <h3 class=" mil-appearance">Join Us as Partner</h3>
                             <h6>Become our exclusive partner and follow us through our projects by signing up</h6>
                         </div>
-                      
                     </div>
                     <form action="{{route('partner.store')}}" method="POST">
                         @csrf

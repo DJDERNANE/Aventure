@@ -43,7 +43,7 @@ Route::get('/', function () {
     $presentationvedio = Landingpage::where('type', 'presentation_vedio')->get();
     $servicevedio = Landingpage::where('type', 'service_vedio')->get();
     $articles = Landingpage::where('type', 'simple_article')->get();
-    return view('index', compact(['events', 'challenges', 'presentationvedio', 'servicevedio', 'articles', 'offers']));
+    return view('index', compact([ 'challenges', 'presentationvedio', 'servicevedio', 'articles', 'offers']));
 });
 
 Route::get('/dashboard', function () {
@@ -91,7 +91,7 @@ Route::get('/incubators', function () {
 Route::get('/event', function () {
     $eventsOrganized = Event::where('type','organized')->get();
     $eventsTookPart = Event::where('type','tookpart')->get();
-    return view('events', compact(['eventsOrganized','tookpart']));
+    return view('events', compact(['eventsOrganized','eventsTookPart']));
 });
 
 Route::get('/discrupt', function () {
@@ -168,5 +168,5 @@ Route::get('/domicilationoffers', function () {
 Route::get('/eventdetails/{id}', function ($id) {
     $event = Event::findOrFail($id);
     return view('eventdetails', compact('event'));
-});
+})->name('eventdetails');
 require __DIR__ . '/auth.php';

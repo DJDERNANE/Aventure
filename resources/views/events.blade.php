@@ -304,9 +304,12 @@
                                         <img src="pictures/events/{{ $item->photo }}" alt="">
                                         <div class="floor">
                                             <h5 class="mil-appearance">{{ $item->title }}</h5>
-                                            <button>
-                                                Check
-                                            </button>
+                                            <a href="{{route('eventdetails',$item->id)}}">
+                                                <button>
+                                                    Check
+                                                </button>
+                                            </a>
+                                           
                                         </div>
                                     </div>
                                 @endforeach
@@ -333,7 +336,7 @@
                                             <div class="eventCard">
 
                                                 <img src="pictures/events/{{$item->photo}}" alt="">
-                                                <a>
+                                                <a href="{{route('/eventdetails',$item->id)}}">
                                                     <button class="check">
                                                         Check
                                                     </button>

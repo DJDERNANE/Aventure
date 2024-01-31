@@ -30,8 +30,8 @@
     @include('includes.views.home.what-we-do')
     @include('includes.views.home.numbers')
     @include('includes.views.home.services')
-    @include('includes.views.home.domiciliation')
-    @include('includes.views.home.challenges')
+
+    
 
 
 @endsection

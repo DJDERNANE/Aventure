@@ -10,9 +10,7 @@
                         <li>
                             <a href="/" class="mil-link">Home</a>
                         </li>
-                        <li>
-                            <a href="/services" class="mil-link">Services</a>
-                        </li>
+                       
                         
                         <li class="mil-has-children">
                             <a href="#." class="mil-link">Join Ecosystem as</a>

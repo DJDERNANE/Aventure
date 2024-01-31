@@ -145,23 +145,13 @@
                 <!-- contact -->
                 <div class="container mil-content-frame mil-appearance mil-p-120-90">
                     <div class="row justify-content-between mil-mb-90">
-                        <div class="col-xl-5">
+                        <div class="col-xl-12">
 
                             <h3 class="mil-link mil-appearance mil-accent mil-mb-30">Algeria Venture</h3>
                             <h3 class="mil-mb-60 mil-appearance">Join Us as Sponsor</h3>
-
+                            <h6>Don’t miss the opportunities from an optimal business environment for entrepreneurial-minded innovators events and challenges</h6>
                         </div>
-                        <div class="col-xl-6">
-                            <div class="row mil-mt-55-adapt">
-                                <div class="col-lg-12">
-                                    <div class="mil-icon-box mil-box-hori mil-appearance mil-mb-30">
-                                        <div class="mil-icon-box-text">
-                                            <h6>Don’t miss the opportunities from an optimal business environment for entrepreneurial-minded innovators events and challenges</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                     <form method="POST" action="{{route('sponsor.store')}}">
                         @csrf

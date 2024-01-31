@@ -150,24 +150,14 @@
                 <!-- contact -->
                 <div class="container mil-content-frame mil-appearance mil-p-120-90">
                     <div class="row justify-content-between mil-mb-90">
-                        <div class="col-xl-5">
+                        <div class="col-xl-12">
 
                             <h3 class="mil-link mil-appearance mil-accent mil-mb-30">Algeria Venture</h3>
                             <h3 class="mil-mb-60 mil-appearance">Join Us as Mentor</h3>
-
+                            <h6>Train and support start-ups and innovative project leaders become part
+                                of our Startup accelerator</h6>
                         </div>
-                        <div class="col-xl-6">
-                            <div class="row mil-mt-55-adapt">
-                                <div class="col-lg-12">
-                                    <div class="mil-icon-box mil-box-hori mil-appearance mil-mb-30">
-                                        <div class="mil-icon-box-text">
-                                            <h6>Train and support start-ups and innovative project leaders become part
-                                                of our Startup accelerator</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                     <form action="{{ route('coach.store') }}" method="POST">
                         @csrf
